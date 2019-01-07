@@ -19,5 +19,9 @@ class PeriodicMenu (models.Model):
     def __str__(self):
         return self.name
 
-
+#TODO dodać usera
+# class Comment (models.Model):
+#     comment_text = models.CharField(max_length=500)
+#     user = models.ForeignKey (User)
+#     timestamp = models.DateTimeField
 

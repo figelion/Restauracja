@@ -7,6 +7,13 @@
     <title>Title</title>
 </head>
 <body>
+    {%if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>>
+        {% endfor %}
+    {% endif %}
     <{% if menu_list %}
     <ul>
     {% for menu in menu_list %}
@@ -14,7 +21,7 @@
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>No menus are available.</p>
 {% endif %}
 
 </body>
