@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+  <div class="navbar-nav">
+        {% if user.is_authenticated %}
+        <li> <a  href="{% url 'users:logout' %}">Log out</a></li>
+        <li><a  href="{% url 'users:profile' %}">Profile</a></li>
+        {%else%}
+        <li><a  href="{% url 'users:login' %}">Log In</a></li>
+        <li><a  href="{% url 'users:register' %}">Register</a></li>
+        {% endif %}
+    </div>
     <h1>{{ menu.name }}
         {{ menu.period }}
     </h1>

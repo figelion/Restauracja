@@ -1,0 +1,25 @@
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="navbar-nav">
+        <li> <a  href="{% url 'users:logout' %}">Log out</a></li>
+        <li><a  href="{% url 'menu:places' %}">Main site</a></li>
+</div>
+    <div class="content-section">
+      <div class="media">
+        <div class="media-body">
+          <h2 class="account-heading">{{ user.username }}</h2>
+          <p class="text-secondary">{{ user.email }}</p>
+        </div>
+      </div>
+      <form method="POST" >
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Profile Change</legend>
+              {{ u_form|crispy }}
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Update</button>
+          </div>
+      </form>
+    </div>
+{% endblock content %}
