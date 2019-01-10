@@ -13,19 +13,29 @@
         <li><a  href="{% url 'users:login' %}">Log In</a></li>
         <li><a  href="{% url 'users:register' %}">Register</a></li>
         {% endif %}
-    </div>
-    <h1>{{ menu.name }}
-        {{ menu.period }}
-    </h1>
+  </div>
 
+   {% if menu_list %}
     <ul>
-    {% for dish in menu.dish.all %}
-         <li>{{ dish.name }}</li>
-             {{ dish.description }}
-             {{ dish.price }}
-             {{ dish.type }}
+    {% for menu in menu_list %}
+        <li><a href="{% url 'menu:menu' menu.id %}">{{ menu.name }}</a></li>
     {% endfor %}
     </ul>
+    {% else %}
+    <p>No place are available. We are in the process of develop.</p>
+    {% endif %}
+
+{% block content %}
+  {% if comments_list %}
+    {% for comment in comments_list %}
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{ comment.author }}</a>
+            <small class="text-muted">{{ comment.timestamp|date:"F d, Y" }}</small>
+        </div>
+  <p >{{comment.comment_text}}</p>
+    {% endfor %}
+  {% endif %}
+{%endblock content%}
 
 </body>
 </html>

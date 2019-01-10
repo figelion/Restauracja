@@ -16,14 +16,15 @@
         {% endif %}
     </div>
 
-    <{% if menu_list %}
+    <{% if place_list %}
     <ul>
-    {% for menu in menu_list %}
-        <li><a href="{% url 'menu:detail' menu.id %}">{{ menu.name }}</a></li>
+    {% for place in place_list %}
+        <li><a href="{% url 'menu:detail' place.id %}">{{ place.town}}</a></li>
+       <!-- <li><a href="{% url 'menu:detail' menu.id %}">{{ menu.name }}</a></li>-->
     {% endfor %}
     </ul>
     {% else %}
-    <p>No menus are available.</p>
+    <p>No place are available. We are in the process of develop.</p>
     {% endif %}
 
 {% endblock content %}
