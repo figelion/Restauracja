@@ -19,13 +19,15 @@ def index(request):
 
 def detail(request, place_id):
 
-    menu_list = PeriodicMenu.objects.filter(PeriodicMenu.place == place_id)
-    comments_list = Comment.objects.filter(Comment.place == place_id)
+
+    menu_list = PeriodicMenu.objects.filter(place=place_id)
+    comments_list = Comment.objects.filter(place=place_id)
+
     context = {'menu_list': menu_list,
                'comments_list': comments_list
                }
 
-    return render(request, 'menu/index.html', context)
+    return render(request, 'menu/detail.html', context)
 
 def dishes(request, periodicMenu_id):
     # try:

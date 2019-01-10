@@ -23,7 +23,7 @@ class PeriodicMenu (models.Model):
     name = models.CharField(max_length=200, default="Menu przykładowe")
     period = models.CharField(max_length=200)                                       #Okres w jakim obowiązuje np. Zima
     dish = models.ManyToManyField(Dishes, blank=True, null=True)
-    place = models.ManyToManyField(Place)
+    place = models.ManyToManyField(Place, null=True)
 
     def __str__(self):
         return self.name
@@ -35,4 +35,4 @@ class Comment (models.Model):
     timestamp = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.place
+        return self.place.town

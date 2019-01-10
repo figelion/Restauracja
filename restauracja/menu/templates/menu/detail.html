@@ -12,17 +12,18 @@
         {%else%}
         <li><a  href="{% url 'users:login' %}">Log In</a></li>
         <li><a  href="{% url 'users:register' %}">Register</a></li>
+
         {% endif %}
   </div>
 
    {% if menu_list %}
     <ul>
     {% for menu in menu_list %}
-        <li><a href="{% url 'menu:menu' menu.id %}">{{ menu.name }}</a></li>
+        <li><a href="{% url 'menu:dishes' menu.id %}">{{ menu.name }}</a></li>
     {% endfor %}
     </ul>
     {% else %}
-    <p>No place are available. We are in the process of develop.</p>
+    <p>No menu are available. We are in the process of develop.</p>
     {% endif %}
 
 {% block content %}
@@ -34,6 +35,8 @@
         </div>
   <p >{{comment.comment_text}}</p>
     {% endfor %}
+  {% else %}
+  <p>No comments</p>
   {% endif %}
 {%endblock content%}
 
