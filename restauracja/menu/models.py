@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 # Create your models here.
 class Place (models.Model):
@@ -35,4 +36,8 @@ class Comment (models.Model):
     timestamp = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.place.town
+        return self.comment_text
+
+    def get_absolute_url(self):
+        return reverse('menu:detail', kwargs={'place_id': self.place.id})
+
