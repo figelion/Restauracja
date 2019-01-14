@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf14f810-daa4-4fb2-89ca-b9f98a5e8f6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/restauracja/menu/templates/menu/comment_confirm_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restauracja/menu/templates/menu/comment_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restauracja/menu/templates/menu/comment_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restauracja/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/restauracja/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restauracja/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/restauracja/menu/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restauracja/menu/templates/menu/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/restauracja/menu/templates/menu/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restauracja/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/restauracja/menu/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restauracja/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/restauracja/menu/views.py" afterDir="false" />
@@ -38,29 +34,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="68" />
-          <entry key="py" value="174" />
+          <entry key="html" value="71" />
+          <entry key="py" value="176" />
           <entry key="sqlite3" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="68" />
+          <entry key="HTML" value="71" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="174" />
+          <entry key="Python" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2613" />
-          <entry key="py" value="6708" />
+          <entry key="html" value="2691" />
+          <entry key="py" value="6927" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2613" />
-          <entry key="Python" value="6708" />
+          <entry key="HTML" value="2691" />
+          <entry key="Python" value="6927" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -79,32 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="31" column="107" selection-start-line="31" selection-start-column="107" selection-end-line="31" selection-end-column="107" />
+            <state relative-caret-position="357">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/dishes.html">
+        <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/restauracja/menu/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1547499735966" expanded="true" signature="956:1076" ph="..." />
-                <marker date="1547499735966" expanded="true" signature="1243:1244" ph="..." />
-                <marker date="1547499735966" expanded="true" signature="1513:1518" ph="..." />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -112,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restauracja/menu/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="315">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -121,33 +102,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/comment_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/restauracja/menu/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="477">
+              <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
               <folding>
                 <element signature="e#27#63#0" expanded="true" />
-                <marker date="1547499563274" expanded="true" signature="1044:2678" ph="..." />
-                <marker date="1547499563274" expanded="true" signature="1682:2678" ph="..." />
+                <marker date="1547502556060" expanded="true" signature="1062:2817" ph="..." />
+                <marker date="1547502556060" expanded="true" signature="1777:2817" ph="..." />
               </folding>
             </state>
           </provider>
@@ -204,18 +167,18 @@
         <option value="$PROJECT_DIR$/restauracja/menu/templates/menu/comment_detail.html" />
         <option value="$PROJECT_DIR$/restauracja/menu/templates/menu/base.html" />
         <option value="$PROJECT_DIR$/restauracja/menu/templates/menu/comment_form.html" />
-        <option value="$PROJECT_DIR$/restauracja/menu/urls.py" />
         <option value="$PROJECT_DIR$/restauracja/menu/templates/comment_confirm_delete.html" />
         <option value="$PROJECT_DIR$/restauracja/menu/templates/menu/comment_confirm_delete.html" />
+        <option value="$PROJECT_DIR$/restauracja/menu/models.py" />
+        <option value="$PROJECT_DIR$/restauracja/menu/urls.py" />
         <option value="$PROJECT_DIR$/restauracja/menu/templates/menu/detail.html" />
         <option value="$PROJECT_DIR$/restauracja/menu/views.py" />
-        <option value="$PROJECT_DIR$/restauracja/menu/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="722" />
-    <option name="width" value="1099" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -325,10 +288,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="722" y="0" width="1099" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7808765" visible="true" weight="0.21677662" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7808765" weight="0.24679486" />
       <window_info id="Structure" order="1" sideWeight="0.21912351" side_tool="true" weight="0.14754099" />
       <window_info id="Favorites" order="2" sideWeight="0.50222224" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -339,7 +302,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3314856" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.51073986" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15662651" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15334064" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -602,13 +565,6 @@
     <entry file="file://$PROJECT_DIR$/restauracja/menu/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/config.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378" />
@@ -635,17 +591,30 @@
     <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/comment_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/dishes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restauracja/menu/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1547499735966" expanded="true" signature="956:1076" ph="..." />
+            <marker date="1547499735966" expanded="true" signature="1243:1244" ph="..." />
+            <marker date="1547499735966" expanded="true" signature="1513:1518" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/comment_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/comment_confirm_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
         </state>
       </provider>
     </entry>
@@ -656,58 +625,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/dishes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/comment_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="22" lean-forward="true" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="231">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/detail.html">
+    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/comment_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="107" selection-start-line="31" selection-start-column="107" selection-end-line="31" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restauracja/menu/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-          <folding>
-            <element signature="e#27#63#0" expanded="true" />
-            <marker date="1547499563274" expanded="true" signature="1044:2678" ph="..." />
-            <marker date="1547499563274" expanded="true" signature="1682:2678" ph="..." />
-          </folding>
+        <state relative-caret-position="231">
+          <caret line="11" column="98" selection-start-line="11" selection-start-column="98" selection-end-line="11" selection-end-column="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restauracja/menu/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restauracja/menu/models.py">
+    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="357">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restauracja/menu/templates/menu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restauracja/menu/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1547499735966" expanded="true" signature="956:1076" ph="..." />
-            <marker date="1547499735966" expanded="true" signature="1243:1244" ph="..." />
-            <marker date="1547499735966" expanded="true" signature="1513:1518" ph="..." />
+            <element signature="e#27#63#0" expanded="true" />
+            <marker date="1547502556060" expanded="true" signature="1062:2817" ph="..." />
+            <marker date="1547502556060" expanded="true" signature="1777:2817" ph="..." />
           </folding>
         </state>
       </provider>

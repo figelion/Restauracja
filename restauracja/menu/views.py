@@ -25,17 +25,17 @@ def index(request):
     context = {'place_list': place_list}
     return render(request, 'menu/index.html', context)
 
-def detail(request, place_id):
-
-
-    menu_list = PeriodicMenu.objects.filter(place=place_id)
-    comments_list = Comment.objects.filter(place=place_id)
-
-    context = {'menu_list': menu_list,
-               'comments_list': comments_list
-               }
-
-    return render(request, 'menu/detail.html', context)
+# def detail(request, place_id):
+#
+#
+#     menu_list = PeriodicMenu.objects.filter(place=place_id)
+#     comments_list = Comment.objects.filter(place=place_id)
+#
+#     context = {'menu_list': menu_list,
+#                'comments_list': comments_list
+#                }
+#
+#     return render(request, 'menu/detail.html', context)
 
 class CommentListView(ListView):
     model = Comment
@@ -49,6 +49,7 @@ class CommentListView(ListView):
         # Add in a QuerySet of all the books
         context['menu_list'] = PeriodicMenu.objects.filter(place=self.kwargs.get('place_id'))
         context['comments_list'] = Comment.objects.filter(place=self.kwargs.get('place_id')).order_by('-timestamp')
+        context['place'] = Place.objects.get(id=self.kwargs.get('place_id'))
         return context
 
 class CommentDetailView(DetailView):
@@ -60,7 +61,8 @@ class CommentCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
-        form.instance.place = self.kwargs.get(['place_id'])
+        place = Place.objects.get(id = self.kwargs.get('place_id'))
+        form.instance.place = place
         return super().form_valid(form)
 
 class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):

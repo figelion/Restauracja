@@ -22,7 +22,7 @@
     {% endif %}
 
 {% block content %}
-  <li><a href="{% url 'menu:comment-create' %}">Create Comment</a>
+  <li><a href="{% url 'menu:comment-create' place.id %}">Create Comment</a>
   {% if comments_list %}
     {% for comment in comments_list %}
         <div class="article-metadata">
