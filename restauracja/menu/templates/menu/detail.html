@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
   <div class="navbar-nav">
         {% if user.is_authenticated %}
         <li> <a  href="{% url 'users:logout' %}">Log out</a></li>
         <li><a  href="{% url 'users:profile' %}">Profile</a></li>
+
         {%else%}
         <li><a  href="{% url 'users:login' %}">Log In</a></li>
         <li><a  href="{% url 'users:register' %}">Register</a></li>
@@ -27,18 +22,21 @@
     {% endif %}
 
 {% block content %}
+  <li><a href="{% url 'menu:comment-create' place.id %}">Create Comment</a>
   {% if comments_list %}
     {% for comment in comments_list %}
         <div class="article-metadata">
             <a class="mr-2" href="#">{{ comment.author }}</a>
             <small class="text-muted">{{ comment.timestamp|date:"F d, Y" }}</small>
+            {% if comment.author == user %}
+            <a class = "btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'menu:comment-update' comment.id  %}">Edit</a>
+            <a class = "btn btn-danger btn-sm mt-1 mb-1" href="{% url 'menu:comment-delete' comment.id  %}">Delete</a>
+            {% endif %}
         </div>
   <p >{{comment.comment_text}}</p>
+
     {% endfor %}
   {% else %}
   <p>No comments</p>
   {% endif %}
 {%endblock content%}
-
-</body>
-</html>

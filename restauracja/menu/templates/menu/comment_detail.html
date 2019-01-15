@@ -1,0 +1,7 @@
+{% block content %}
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{ object.author }}</a>
+            <small class="text-muted">{{ object.timestamp|date:"F d, Y" }}</small>
+        </div>
+  <p >{{object.comment_text}}</p>
+{%endblock content%}
